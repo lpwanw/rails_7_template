@@ -23,6 +23,7 @@ group :development, :test do
   gem "factory_bot_rails"
   gem "ffaker"
   gem "rails_best_practices"
+  gem "rspec-rails"
   gem "rubocop", require: false
   gem "rubocop-capybara", require: false
   gem "rubocop-performance", require: false
@@ -37,6 +38,9 @@ end
 
 group :test do
   gem "capybara"
+  gem "database_cleaner-active_record"
   gem "selenium-webdriver"
+  gem "shoulda-matchers"
+  gem "simplecov", require: false
   gem "webdrivers"
 end
